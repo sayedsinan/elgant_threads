@@ -125,24 +125,29 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           Expanded(
-            child: 
-            GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5),
-              itemCount: 4,
+            child: GridView.builder(
+              gridDelegate:
+                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5),
+              itemCount: 5,
               itemBuilder: (context, index) {
-              return Row(
-                children: [
-                  ClipRRect(
+                return Padding(
+                  padding: const EdgeInsets.all(
+                      8.0), // Adjust the space between circles as needed
+                  child: SizedBox(
+                    width: 2, // Adjust circle width
+                    height: MediaQuery.of(context).size.width *
+                        0.2, // Adjust circle height
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(50),
                       child: Container(
                         color: Colors.grey,
-                        width: sizeof.size.width * 0.3,
-                        height: sizeof.size.height * 0.15,
-                      ))
-                ],
-              );
-            }),
-          )
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );

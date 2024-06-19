@@ -1,5 +1,4 @@
 import 'package:elegant_threads/controller/login_and_signup.dart';
-import 'package:elegant_threads/view/login_/sign_up.dart';
 import 'package:elegant_threads/view/navbar/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,8 +1,6 @@
 import 'package:elegant_threads/controller/login_and_signup.dart';
 import 'package:elegant_threads/style/color.dart';
 import 'package:elegant_threads/style/font_style.dart';
-import 'package:elegant_threads/view/account/account.dart';
-import 'package:elegant_threads/view/home/home_page.dart';
 import 'package:elegant_threads/view/signUp/already.dart';
 import 'package:elegant_threads/view/signUp/logo.dart';
 import 'package:elegant_threads/view/signUp/signUp_button.dart';

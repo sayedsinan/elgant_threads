@@ -1,7 +1,5 @@
 import 'package:elegant_threads/style/color.dart';
 import 'package:elegant_threads/style/font_style.dart';
-import 'package:elegant_threads/view/account/account.dart';
-import 'package:elegant_threads/view/home/home_page.dart';
 import 'package:elegant_threads/view/navbar/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

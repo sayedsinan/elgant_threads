@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
 
-class SearchBar extends StatelessWidget {
-  const SearchBar({super.key});
+class MySearchBar extends StatelessWidget {
+  const MySearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(right: 60, left: 20),
-            child: TextFormField(
-              decoration: InputDecoration(
-                prefixIcon: const Icon(Icons.search),
-                hintText: 'Search',
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                contentPadding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                ), // Adjust the vertical padding
+        Padding(
+          padding: const EdgeInsets.only(right: 60, left: 20),
+          child: TextFormField(
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.search),
+              hintText: 'Search',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
               ),
+              contentPadding: const EdgeInsets.symmetric(
+                vertical: 8,
+              ), // Adjust the vertical padding
             ),
           ),
         ),

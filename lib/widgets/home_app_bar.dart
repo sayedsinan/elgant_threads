@@ -9,7 +9,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
+        const   Row(
             children: [
               Icon(Icons.location_on, color: Colors.brown),
               SizedBox(width: 8),
@@ -22,7 +22,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           Stack(
             children: [
-              Icon(Icons.notifications_none, color: Colors.black, size: 28),
+             const Icon(Icons.notifications_none, color: Colors.black, size: 28),
               Positioned(
                 right: 0,
                 top: 0,
@@ -32,11 +32,11 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                     color: Colors.red,
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     minWidth: 12,
                     minHeight: 12,
                   ),
-                  child: Text(
+                  child: const Text(
                     ' ',
                     style: TextStyle(
                       color: Colors.white,

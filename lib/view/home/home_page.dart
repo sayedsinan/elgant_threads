@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
             const SeeAllText(),
             MyCircles(),
             GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
               ),
               itemCount: 2,

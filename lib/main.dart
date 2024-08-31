@@ -3,6 +3,7 @@ import 'package:elegant_threads/view/login_/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'view/detailedPage/detailed_page.dart';
 import 'view/home/home_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Detailed(),
     );
   }
 }

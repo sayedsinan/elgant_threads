@@ -1,7 +1,9 @@
 import 'package:elegant_threads/controller/login_and_signup.dart';
-import 'package:elegant_threads/view/home/home_page.dart';
+import 'package:elegant_threads/view/login_/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'view/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );

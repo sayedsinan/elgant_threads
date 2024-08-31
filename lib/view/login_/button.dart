@@ -1,12 +1,17 @@
+import 'package:elegant_threads/controller/login_and_signup.dart';
 import 'package:elegant_threads/style/color.dart';
 import 'package:elegant_threads/style/font_style.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Padding signinButton(MediaQueryData sizeof) {
+  final controller = Get.find<Credential>();
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: ElevatedButton(
-      onPressed: () {},
+      onPressed: () {
+        controller.createUser();
+      },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(brown),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
